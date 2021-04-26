@@ -2,9 +2,9 @@
 
 /* Variables */
 
-$color-one:#81adc5;
-$color-two:#020c1b;
-$color-three:#503063;
+$color-one:#0984e3;
+$color-two:#2d3436;
+$color-three:#6c5ce7;
 $color-text:#ffffff;
 $font-text:'Roboto Slab', serif;
 $font-header:'Ruda', sans-serif;
@@ -27,21 +27,24 @@ $transition: all 1s;
 font-family: $font-header;
 font-size: 48px;
 color: $color-two;
+text-align: center;
 }
 
 .container{
+min-height: 300px;
 text-align: center;
 background: $color-one;
 }
 
 #button-rock, #button-scissors, #button-paper{
 display: inline-block;
-min-width:160px;
-border-radius: 10px;
-margin: 24px auto 0 auto;
-padding: 16px;
+min-width: 200px;
+color: #ffffff;
+border-radius: 30px;
+margin: 70px auto 0 auto;
+padding: 40px 20px 40px 20px;
 font-family: $font-text;
-font-size: 20px;
+font-size: 30px;
 background: $color-three;
 background-position: 100% 0;
 background-size: 300%;
@@ -51,9 +54,34 @@ border-width: 2px;
 border-style: solid;
 transition: $transition;
     }
-    
-    
-#button-rock, #button-scissors, #button-paper,:hover{
-background-position: 0 100%; 
+
+#button-rock:hover{
+  background-position: 0 100%; 
+  color: #ffffff;
+}
+
+
+#button-scissors:hover{
+  background-position: 0 100%; 
+  color: #ffffff;
+}
+
+#button-paper:hover{
+  background-position: 0 100%; 
+  color: #ffffff;
+}
+
+#button-rock {
 color: #ffffff;
+background-image: linear-gradient(90deg, $color-one 50%, transparent 50%);
+}
+
+#button-scissors {
+color: #ffffff;
+background-image: linear-gradient(90deg, $color-one 50%, transparent 50%);
+}
+
+#button-paper{
+color: #ffffff;
+background-image: linear-gradient(90deg, $color-one 50%, transparent 50%);
 }
