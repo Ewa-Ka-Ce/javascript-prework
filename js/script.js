@@ -1,5 +1,4 @@
-let
-argButtonName;
+let argButtonName;
 
 function buttonClicked(argButtonName) {
   clearMessages();
@@ -66,8 +65,7 @@ function displayResult(argPlayerMove, argComputerMove) {
 
 }
 
-const
-buttonRock = document.getElementById('button-rock'),
+const buttonRock = document.getElementById('button-rock'),
 buttonPaper = document.getElementById('button-paper'),
 buttonScissors = document.getElementById('button-scissors');
 
